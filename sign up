@@ -1,0 +1,15 @@
+##
+
+    
+ START
+// signUp(){
+    prompt for (email,username,password)
+     Get email,username,password
+    if(user credentials exist)
+       then
+           Display "Account already exist, please login"
+       else
+           Display "Successful sign up"
+    endif
+}endfunction
+End 
