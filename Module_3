@@ -1,0 +1,30 @@
+##
+
+
+Start
+	1.   logIn()
+	2.   FETCH Username()
+	3.   DISPLAY "Welcome back, " Username
+	4.   FETCH Availabla Products()
+	5.   PROMPT for productID
+	6.   GET productID
+	7.   CASE of(productID)
+			1: Wigs
+			2: Headband
+			3: Lip Gloss
+			4: Necklace
+			5: Studs
+			6: Scrunchie
+			default: display "Not available. Request for assistance"
+	8.   PROMPT for desired quantity
+	9.   GET quantity
+	10.  STORE search history
+	11.  PRINT orderSlip
+	12.  DISPLAY "Thank you for choosing Ayesha. Do you wish to log out Y/N?
+	13.  GET responce
+	14.  IF (response == 'Y') THEN
+			logOut()
+	15.  ELSE;
+			RETURN to line 4.
+		
+

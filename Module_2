@@ -1,0 +1,39 @@
+# This module will help calculate and keep track of employee gross earnings
+
+
+num hours
+num Pay_Rate = 10.00
+num gross
+Start
+	1.   Display "Welcome"
+	2.   hours = getHoursWorked()
+	3.   gross = hours * PayRate
+	4.   prompt for balanceRate
+	5.   get balanceRate
+	6.	 discardTax(gross, balanceRate)
+	4.   display "hours worked": hours, "Gross pay is": gross +"Exclusive of tax"
+	## the following function is key for the company to keep track of the total cash they will have to part with in paying employees
+	5.   incrementTotalSalaryLiable(gross, tax)
+	6.   return to 1.
+End
+
+
+getHoursWorked(){
+	1.  prompt for hours worked
+	2.  get hours
+	3.  return hours}
+
+
+discardTax(gross, balanceRate){
+		1.  tax = gross * balanceRate
+		2.  gross =- tax
+3. return gross, tax
+}
+
+
+incrementTotalSalaryLiable(gross, tax)
+		1.  total = gross + tax
+		2.  add total to salaryBudget
+3. return
+}
+
