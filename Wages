@@ -5,16 +5,23 @@ num hours
 num Pay_Rate = 10.00
 num gross
 Start
-	1.   Display "Welcome"
-	2.   hours = getHoursWorked()
-	3.   gross = hours * PayRate
-	4.   prompt for balanceRate
-	5.   get balanceRate
-	6.	 discardTax(gross, balanceRate)
-	4.   display "hours worked": hours, "Gross pay is": gross +"Exclusive of tax"
+	1.   logIn()
+	2.   Display "Welcome, " username
+	3.   get payRate
+	3.   hours = getHoursWorked()
+	4.   gross = hours * PayRate
+	5.   prompt for balanceRate
+	6.   get balanceRate
+	7.   discardTax(gross, balanceRate)
+	8.   display "hours worked": hours, "Gross pay is": gross +"Exclusive of tax"
 	## the following function is key for the company to keep track of the total cash they will have to part with in paying employees
-	5.   incrementTotalSalaryLiable(gross, tax)
-	6.   return to 1.
+	9.   incrementTotalSalaryBudget
+	10.  Display "Do you wish to logOut? Y/N" Get response
+	11.  If responce <> 'Y' then
+				return to line 4.
+	     Else;
+	 	logOut
+	     EndIf
 End
 
 
@@ -26,14 +33,8 @@ getHoursWorked(){
 
 discardTax(gross, balanceRate){
 		1.  tax = gross * balanceRate
-		2.  gross =- tax
+		2.  gross -= tax
 3. return gross, tax
 }
 
-
-incrementTotalSalaryLiable(gross, tax)
-		1.  total = gross + tax
-		2.  add total to salaryBudget
-3. return
-}
 
