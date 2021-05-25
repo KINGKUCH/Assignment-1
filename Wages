@@ -1,9 +1,10 @@
 # This module will help calculate and keep track of employee gross earnings
 
 
-num hours
-num Pay_Rate = 10.00
-num gross
+hours (int)
+Pay_Rate (int)
+gross(int)
+
 Start
 	1.   logIn()
 	2.   Display "Welcome, " username
