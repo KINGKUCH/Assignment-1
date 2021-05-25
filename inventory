@@ -1,20 +1,42 @@
-##
+## Through this module the company will be able to track their products in stock
+
+START 
+     1.   logIn()
+     2.   display "Welcome, " username
+     3.   calculateChangeInStock()
+     
+End
+     
+     
+calculateChangeInStock(){
+      if(purchase is made) then
+           stockRemaining -= totalItemsPurchased
+      Else:
+          display "No purchases were made today" 
+      endif
+return stockRemaining
+}
+
+
+
+####### Darren which one should we use. above or below? 
+
+
 
 
 START
-     1. 
-     2.LogIn
-     3.calculateChangeStock= int
-     4.// calculateChangeStock(){
-     5.   if(purchase is made)
-     6.      then (int-1)
-     7.           Display "total left"
-     8.  endif
-     9.}endfunction
-    10.
-    11.
-    12.
-    13.
-    14.
-    15.
-END    
+     1.  LogIn()
+     2.  Didplay "Welcome, " username
+     3.  prompt for Number of items sold
+     4.  get total#
+     5.  calculateChangeInStock(total#)
+     6.  display stockRemaining
+End
+    
+  
+     
+ calculateChangeStock(total#){
+     1.   stockRemaining -= total number
+     2.   Store stockRemaining
+ return stockRemaining
+ }()
