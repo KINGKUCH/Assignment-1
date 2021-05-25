@@ -1,0 +1,20 @@
+##
+
+
+START
+     1. 
+     2.LogIn
+     3.calculateChangeStock= int
+     4.// calculateChangeStock(){
+     5.   if(purchase is made)
+     6.      then (int-1)
+     7.           Display "total left"
+     8.  endif
+     9.}endfunction
+    10.
+    11.
+    12.
+    13.
+    14.
+    15.
+END    
