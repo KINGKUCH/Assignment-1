@@ -1,0 +1,11 @@
+Start
+//hoursWorked (){get hours worked for each employee}
+Display"Enter hours worked" by 
+Display" Employees number"
+Input hours [ ]
+End for
+
+// Display the values entered
+Display " The hours you entered "
+Display hours
+End for
