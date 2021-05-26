@@ -29,13 +29,15 @@ End
 getHoursWorked(){
 	1.  prompt for hours worked
 	2.  get hours
-	3.  return hours}
+return (hours)
+}
+
 
 
 discardTax(gross, balanceRate){
 		1.  tax = gross * balanceRate
 		2.  gross -= tax
-3. return gross, tax
+return (gross, tax)
 }
 
 
