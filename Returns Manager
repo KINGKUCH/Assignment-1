@@ -3,24 +3,35 @@
 sale_price (int)
 mfg_price (int)
 profit (int)
-total_returns (int)
+total_profit (int)
 
-START
-	1.  prompt for sale_price
-	2.  get sale price
-	3.  if sale price =< 0
-			display "invalid! please try again"
-		else
-			continue
-	4.  prompt for mfg_price
-	5.	get mfg_price
-	6.	unit_profit = sale_price - mfg_price
-	7.	increment total_returns()
-	9.	display unit_profit
-	10. prompt for sale_price
-	11. get sale_price
-	12. return to 3
-END
 
+Start
+	1.   getSalePrice()
+	2.   If salePrice > 0;
+		computeProfit(salePrice)
+	3.   else;
+		display "Invalid input. Please Try again"
+End
+
+
+
+getSalePrice(){
+	1. prompt for salePrice
+	2. get salePrice
+return salePrice
+}
+
+
+
+computeProfit(saleprice){
+	1. prompt for mfgPrice
+	2. get mfgPrice
+	3. profit = salePrice - mfgPrice
+	## the following step is meant to add the single product/service profit to the company's total sales profit
+	4. increment tatalSalesProfit
+	5. display profit
+	6. return to line 1.
+}
 
 
