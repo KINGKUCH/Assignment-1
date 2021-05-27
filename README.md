@@ -4,9 +4,7 @@ Part A
 ICG group 32
 
 Modules:
-
 Inventory
-
 Customers
  -customerOrders  
    -logIn
