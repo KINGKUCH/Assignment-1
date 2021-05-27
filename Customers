@@ -1,0 +1,140 @@
+## take note of attached images for flowcharts
+
+    
+START
+   1.  Prompt for (email, username, password)
+   2.   Get email, username, password
+   3.    if user credentials exist; then
+   5.      Display "Account already exist, please login"
+   6.  else;
+   7.      Display "Sign Up Successful"
+   8.  endif
+   9.      Display "Thank you for choosing Ayesha Beauty Products"
+End
+
+Start 
+ 1.logIn(){
+ 2.  IF(username AND password match)
+ 3.   THEN
+ 4.       Login
+ 5.  else
+ 6.       Display "Something is incorrect, please try again"
+ 7.  endif
+8. }endfunction
+9.       Return to Line 4
+
+## OR, unsure about which is correct.
+
+logIn(){
+    1.  PROMPT for credentials
+    2.  GET username, password
+    3.  IF username & password math: then
+            allowAccess
+    4.  Else:
+            Display "Incorrect details. Try again"
+            return to line 2.
+return username
+}
+    
+
+
+Start
+	1.   logIn()
+	2.   FETCH Username()
+	3.   DISPLAY "Welcome back, " Username
+	4.   FETCH Availabla Products()
+	5.   PROMPT for productID
+	6.   GET productID
+	7.   CASE of(productID)
+			1: Wigs
+			2: Headband
+			3: Lip Gloss
+			4: Necklace
+			5: Studs
+			6: Scrunchie
+			default: display "Not available. Request for assistance"
+	8.   PROMPT for desired quantity
+	9.   GET quantity
+	10.  STORE search history
+	11.  PRINT orderSlip
+	12.  DISPLAY "Thank you for choosing Ayesha. Do you wish to log out Y/N?
+	13.  GET responce
+	14.  IF (response == 'Y') THEN
+			logOut()
+	15.  ELSE;
+			RETURN to line 4.
+      
+START
+  1. createNewOrder(){
+  2.    prompt for product/products
+  3.    get total amount of items
+  4.  calculate "total cost of items"
+  5.      Display "Total amount"
+  6.    get payment credentials
+  7.    if(payment credentials are accepted)
+  8.      then
+  9.          Display "Order Successful"
+  10.      else
+  11.   if(payment fails)
+  12.      then 
+  13.         Display "Please try again"
+  14.  endif 
+  15.}endfunction
+END
+
+START
+  1.logOut(){
+  2. call log in
+  3.  if(user is logged in)
+  4.     then
+  5.        Display "log out"
+  6.     then
+  7.  complete log out}
+END
+
+START
+  1. resetPassword(){
+  2.   if(username or password are incorrect)
+  3.       then 
+  4.   if(password is forgotten)
+  5.    click "Reset Password"
+  6.     Get New Password 
+  7.     Get Confirm Password
+  8.    click "continue"
+  9.         Display "Password has been successfully changed, log in to continue"
+ 10.  endif
+ 11.}endfunction
+END
+
+START
+  1. changeUsername(){
+  2. logIn()
+  3.  click "profile"  
+  4.  cilck "account details"
+  5.  click "change username"
+  6. Prompt user for (new username)
+  7.  get newUsername
+  8. if(username already exists) then
+  9.    Display "username already taken, please try something else"
+ 10. else
+ 11. if(username available) then
+ 12.   click "save"
+ 13.    Display "username successfully changed"
+ 14.  endif
+ 15.}endfunction
+END
+
+START
+  1. Contact(){
+  2.  logIn()
+  3.   click "Contact"
+  4. Prompt user for (name,surname,email,message)
+  5.   get(name,surname,email,message)
+  6.   click "send"
+  7.     Display "Message Successfully sent, response should be received within 24 hours"
+  8.  endif
+  9.}endfunction
+END 
+ 
+
+
