@@ -9,5 +9,5 @@ START
    6.  else;
    7.      Display "Sign Up Successful"
    8.  endif
-   9.  Display "Thank you for choosing Ayesha Beauty Products"
+   9.      Display "Thank you for choosing Ayesha Beauty Products"
 End
