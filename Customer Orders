@@ -1,6 +1,12 @@
 /* This software will help inhibit an ease for Ayesha customers searching products */
 
-username 
+username: string
+password: string
+productID: character
+desiredQuantity: num
+responce: character
+
+
 Start
 	1.   logIn()
 	2.   FETCH Username()
