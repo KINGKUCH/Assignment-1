@@ -1,21 +1,21 @@
 # This module will help calculate and keep track of employee gross earnings.
 
 
-hours 
-Pay_Rate (int)
-gross(int)
+hours: int
+Pay_Rate: int
+gross: int
 
 Start
 	1.   logIn()
 	2.   DISPLAY "Welcome, " username
 	3.   GET payRate
 	3.   hours = getHoursWorked()
-	4.   gross = hours * PayRate
+	4.   gross = hours * payRate
 	5.   PROMPT for balanceRate
 	6.   GET balanceRate
 	7.   discardTax(gross, balanceRate)
-	8.   DISPLAY "hours worked": hours, "Gross pay is": gross +"Exclusive of tax"
-	## the following function is key for the company to keep track of the total cash they will have to part with in paying employees
+	8.   DISPLAY "Hours worked": hours, "Gross pay is: " gross " Exclusive of tax"
+/* the following function is key for the company to keep track of the total cash they will have to part with in paying employees */
 	9.   incrementTotalSalaryBudget
 	10.  DISPLAY "Do you wish to logOut? Y/N" Get response
 	11.  IF responce <> 'Y' then
