@@ -1,4 +1,4 @@
-# This module will help calculate and keep track of employee gross earnings.
+/* This module will help calculate and keep track of employee gross earnings. */
 
 
 hours: int
@@ -7,6 +7,7 @@ gross: int
 
 Start
 	1.   logIn()
+/* Note that the function logIn is not defined in this module as it will be duplication of code as it is already defined already in the program */
 	2.   DISPLAY "Welcome, " username
 	3.   GET payRate
 	3.   hours = getHoursWorked()
