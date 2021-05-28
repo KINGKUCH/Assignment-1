@@ -33,4 +33,17 @@ Start
 	15.  ELSE;
 			RETURN to line 4.
 		
+		
+logIn(){
+	1.  PROMPT for credentials
+	2.  GET username, password
+	3.  IF username & password math: then
+			allowAccess
+	4.  Else:
+			Display "Incorrect details. Try again"
+			return to line 4.
+return username
+}
+
+
 
