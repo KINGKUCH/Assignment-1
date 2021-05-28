@@ -24,6 +24,7 @@ Start
 			default: display "Not available. Request for assistance"
 	8.   PROMPT for desired quantity
 	9.   GET quantity
+/* As custo
 	10.  STORE search history
 	11.  PRINT orderSlip
 	12.  DISPLAY "Thank you for choosing Ayesha. Do you wish to log out Y/N?
@@ -46,4 +47,23 @@ return username
 }
 
 
+processOrder(){
 
+	1.  PROMPT for desiredQuantity
+	2.  Get desiredQuantity
+	3.  WRITE purchaseHistory
+	4.  print orderSlip
+	5.  DISPLAY "Thank you for choosing Ayesha. Do you wish to log out? Y/N"
+	6.  GET responce
+	7.  IF (responce == 'Y') then
+		return
+	8.  ELSE 
+		retun to line 4.
+return
+}
+
+
+logOut(){
+	1. DISPLAY "Goodbye"
+return
+}
