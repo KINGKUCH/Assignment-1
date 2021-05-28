@@ -18,6 +18,7 @@ Start
 	8.   DISPLAY "Hours worked": hours, "Gross pay is: " gross " Exclusive of tax"
 /* the following function is key for the company to keep track of the total cash they will have to part with in paying employees */
 	9.   incrementTotalSalaryBudget
+/* to increment as to always add to the total salary budget which will help the company to know how much cash they are liable */
 	10.  DISPLAY "Do you wish to logOut? Y/N" Get response
 	11.  IF responce <> 'Y' then
 				return to line 4.
