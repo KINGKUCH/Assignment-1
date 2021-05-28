@@ -11,7 +11,8 @@ Start
 	1.   logIn()
 	2.   FETCH Username()
 	3.   DISPLAY "Welcome back, " Username
-	4.   FETCH Availabla Products()
+	4.   READ Available Products()
+/* the above line is to fetch all the products in stock in the systems storage and display to the customer on a later line */
 	5.   PROMPT for productID
 	6.   GET productID
 	7.   CASE of(productID)
@@ -22,17 +23,9 @@ Start
 			5: Studs
 			6: Scrunchie
 			default: display "Not available. Request for assistance"
-	8.   PROMPT for desired quantity
-	9.   GET quantity
-/* As custo
-	10.  STORE search history
-	11.  PRINT orderSlip
-	12.  DISPLAY "Thank you for choosing Ayesha. Do you wish to log out Y/N?
-	13.  GET responce
-	14.  IF (response == 'Y') THEN
-			logOut()
-	15.  ELSE;
-			RETURN to line 4.
+	8.  processOrder()
+	9.  logOut()
+End
 		
 		
 logIn(){
@@ -51,8 +44,10 @@ processOrder(){
 
 	1.  PROMPT for desiredQuantity
 	2.  Get desiredQuantity
+/* As customer search history will be cruicial for the company in their products inventory, the following line determines to solve gather them all the customer search history. */
 	3.  WRITE purchaseHistory
-	4.  print orderSlip
+	4.  PRINT orderSlip
+/* For the above line 11. an order receipt will be generated so the customer can just proceed to the counter and pay for her products while they are given to them. */
 	5.  DISPLAY "Thank you for choosing Ayesha. Do you wish to log out? Y/N"
 	6.  GET responce
 	7.  IF (responce == 'Y') then
