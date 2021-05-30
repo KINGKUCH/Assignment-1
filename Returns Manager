@@ -25,5 +25,13 @@ return salePrice
 
 
 
-
+computeProfit(saleprice){
+	1. prompt for mfgPrice
+	2. get mfgPrice
+	3. profit = salePrice - mfgPrice
+	## the following step is meant to add the single product/service profit to the company's total sales profit
+	4. increment tatalSalesProfit
+	5. display profit
+	6. return to line 1.
+}
 
