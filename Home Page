@@ -1,0 +1,14 @@
+/* This will be our home page when you enter the application program
+
+Start
+  DISPLAY "Welcome back! Please input letter based on the Module you intend.
+                        1. Sign Up 
+                        2. Order Products
+                        3. Edit Wages
+                        4. 
+                        5.
+                        6.
+                        7.
+                        GET response"
+Case of                   
+  
