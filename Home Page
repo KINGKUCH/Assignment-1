@@ -1,7 +1,7 @@
 /* This will be our home page when you enter the application program
 
 Start
-  DISPLAY "Welcome back! Please input letter based on the Module you intend.
+  	1.  DISPLAY "Welcome back! Please input number based on the Module you intend.
                         1. Sign Up 
                         2. Order Products
                         3. Edit Wages
@@ -10,6 +10,21 @@ Start
                         6.
                         7.
                         GET response"
-Case of(responce)
-IF (responce == ?)
+		2.  Case of(responce)
+   	      IF (responce == ?);
+    		    	1. open Sign Up module
+   			      2. open Oder Products Modules
+              3. open Edit Wages Module
+              4.
+              5.
+              6.
+              DEFAULT: DISPLAY "Invalid option"
+	 3.  DISPLAY "Do you wish to exit? Y/N"
+ 	 4.  GET responce
+ 	 5.  If (responce == N)
+       return to line 1.
+   6.  ELSE;
+  	   DISPLAY "GoodBye"
+END 
+  
   
