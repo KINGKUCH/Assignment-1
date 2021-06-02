@@ -1,6 +1,7 @@
 /* This is the main part the application program
 
 Start
+/* User can logIn or signUp each time the program starts. Unauthorized access will not be aloud. */
          logIn()
          Display "Select one of the following information
                   0. No
@@ -10,6 +11,7 @@ Start
          Case of(responce){
                   0: End
                   1: Start Get Your Products Module
+/* for each part written Start a module, it is meant to call the module as a function wold.
                   2: Display "Select one of the following options
                            1. Manage Returns
                            2. Sales"
