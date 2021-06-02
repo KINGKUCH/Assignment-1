@@ -5,21 +5,22 @@ Start
                         1. Sign Up 
                         2. Order Products
                         3. Edit Wages
-                        4. 
-                        5.
-                        6.
-                        7.
+                        4. Products/Service Profits 
+                        5. Sales
+                        6. Customers
+                        7. Inventory
          2. GET response"
          3. Case of(responce)
    	      IF (responce == ?);
-    		    	1. open Sign Up module
-   			      2. open Oder Products Modules
-              3. open Edit Wages Module
-              4.
-              5.
-              6.
-              DEFAULT: DISPLAY "Invalid option"
-         4.  DISPLAY "Do you wish to exit? Y/N"
+    		       1. open Sign Up module
+   		       2. open Get Your Products Modules
+                         3. open Resource Funding Module
+                         4. open Manage Returns Module
+                         5. open Sales Module
+                         6. open Customers Module
+                         7. open Inventory Module
+                         DEFAULT: DISPLAY "Invalid option"
+          4.  DISPLAY "Do you wish to exit? Y/N"
  	 5.  GET responce
  	 6.  If (responce == N)
                  return to line 1.
