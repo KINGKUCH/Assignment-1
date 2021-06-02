@@ -1,0 +1,58 @@
+/* This is the main part the application program
+
+Start
+         logIn()
+         Display "Select one of the following information
+                  0. No
+                  1. Customer
+                  3. Administration"
+         Get responce
+         Case of(responce){
+                  0: End
+                  1: Start Get Your Products Module
+                  2: Display "Select one of the following options
+                           1. Manage Returns
+                           2. Sales"
+                      Get option
+                      If (option == 1)
+                           Start Manage Returns Module
+                      Else
+                           Start Sales Module
+                  3: Display "Select one of the following options
+                           1. Resource funding
+                           2. Inventory"
+                     Get option
+                     If (option == 1)
+                           Start Resource Funding Module
+                     Else
+                           Start Inventory Module
+                  Default: Display "Invalid Input.
+                                    Try Again
+                                    Enter No to exit"
+                           return to line 5
+ End
+ 
+ 
+ 
+ 
+logIn(){
+         Display "Already a member? Y/N"
+         Get responce
+         If (responce == 'Y')
+                  Prompt for username and password
+                  Get username and password
+                  If username and password match
+                      return
+                  Else 
+                      Display "Credentials dont match. Try again"
+                      
+         Else Display "Welcome To Ayesha Beauty Products"
+         Prompt for New username and password
+         get credentials
+         write credentials 
+  Return}
+         
+         
+         
+         
+       
