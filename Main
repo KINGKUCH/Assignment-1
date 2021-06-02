@@ -6,6 +6,7 @@ Start
          Display "Select one of the following information
                   0. No
                   1. Customer
+                  2. Finance/Accounting
                   3. Administration"
          Get responce
          Case of(responce){
