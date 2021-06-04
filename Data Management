@@ -1,0 +1,75 @@
+START
+	1.   PROMPT for password
+	2.   GET password
+	3.   verify(password)
+	4.   logIn()
+	5.   Display "Welcome, " username
+		    	 "Please select one of the following information,
+					   1. Update data
+					   2. Fetch data
+					   "
+	6.   GET responce
+	7.   IF (responce == 1);
+	8.   DISPLAY "Plaese select one of the following,
+			      1. detele user
+			      2. add new stock
+			      "
+	9.   IF (responce == 1)
+					PROMPT for persons username
+					GET username
+					DELETE user(username)
+					DISPLAY "Update Success"
+	9.   ELSE;
+		  	 PROMPT for productName and amount
+		  	 GET productName, amount
+		 	 FOR productName in Main;
+				   quantity += amount
+				   ENDFOR
+		   	 WRITE quantity
+		  	 DISPLAY "Stock Updated"
+	10.  ENDIF
+	11.  ELSE;
+				DISPLAY "Please select one of the following,
+						 1. return all users
+						 2. get user purchase history
+						 3. show available stock
+						 "
+				GET responce
+				Case of(responce)
+					1. READ all_users from database Main
+					   DISPLAY all_users
+					2. PROMPT for users username
+					   getHistory(username)
+					   DISPLAY purchaseHistory
+					3. READ availableProducts
+					   DISPLAY availableProducts
+					DEFAULT: DISPLAY "Invalid input"
+	12. ENDIF
+	13. DISPLAY "Do you wish to exit? Y/N"
+	14. GET responce
+	15. IF (responce <> 1)
+			return to main line 3.
+	16. Else;
+END
+
+
+getHistory(username){
+	1. FOR username in databse Main
+	2. READ purchaseHistory
+	3. return purchaseHistory
+}
+
+
+verify(password){
+	1. READ correctPassword
+	2. IF (password <> correctPassword)then
+			GO to line 1.
+	3. ELSE IF (password == correctPassword)then
+	4. Return
+}
+			
+	
+					
+	
+				
+					
