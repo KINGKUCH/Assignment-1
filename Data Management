@@ -1,8 +1,11 @@
 START
+/* We assume that as we release this program, already it comes with a database called main, which will store everything */
 	1.   PROMPT for password
 	2.   GET password
 	3.   verify(password)
 	4.   logIn()
+/* Double authentication is used to make sure that only approapriate users access the confidential data in this module */
+/* Take note that the logIn module is not defined in this module to archieve a clean code as the function is already defined in this program */
 	5.   Display "Welcome, " username
 		    	 "Please select one of the following information,
 					   1. Update data
@@ -54,6 +57,7 @@ END
 
 
 getHistory(username){
+/* This query with control structure FOR will only lock to a specific user in the database, thus returning the purchase history of that specific user */
 	1. FOR username in databse Main
 	2. READ purchaseHistory
 	3. return purchaseHistory
@@ -64,6 +68,7 @@ verify(password){
 	1. READ correctPassword
 	2. IF (password <> correctPassword)then
 			GO to line 1.
+/* If the password does not match that of the correct password, the user is returned back and prompted for the password yet again
 	3. ELSE IF (password == correctPassword)then
 	4. Return
 }
