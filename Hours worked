@@ -1,14 +1,12 @@
 hours worked=int
 
 START
-     //hoursWorked (){get hours worked for each employee
+     hoursWorked(){
      login()
-            Display"Enter hours worked" by 
+       Prompt user for Employee number
+       Get Employee number     
             Display" Employees number"
-     Input hours [ ]
-     End for
-
-     // Display the values entered
-     Display " The hours you entered "
-     Display hours
-END
+     Input hours worked [ ]
+            Display"Enter hours worked" 
+        endif
+ END
